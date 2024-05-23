@@ -179,7 +179,10 @@ in {
 
     plugins = with pkgs; [
       vimPlugins.alpha-nvim
+      vimPlugins.cmp-buffer
+      vimPlugins.cmp-path
       vimPlugins.cmp-nvim-lsp
+      vimPlugins.friendly-snippets
       vimPlugins.gitsigns-nvim
       vimPlugins.harpoon
       vimPlugins.lsp-zero-nvim
