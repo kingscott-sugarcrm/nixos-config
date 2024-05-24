@@ -42,11 +42,11 @@
 # Start the Kiosk API in multiverse
 start_kiosk_api() {
 	bazel run --color=yes -- //projects/kiosk/backend/cmd/kiosk-api server \
-		--secret=/Users/scott.king/.bazel/client.json \
-		--regional-secrets=/Users/scott.king/.bazel/region.json \
-		--auth-credentials=/Users/scott.king/Sugar/multiverse/projects/kiosk/backend/auth-credentials.json \
+		--secret=/home/kingscott/.bazel/client.json \
+		--regional-secrets=/home/kingscott/.bazel/region.json \
+		--auth-credentials=/home/kingscott/multiverse/projects/kiosk/backend/auth-credentials.json \
 		--auth0-sts-authority=dev-bxffihsz.us.auth0.com \
-		--client-origin=http://localhost:3000 \
+		--client-origin=http://dev.local:3000 \
 		--tenant-details-table=kiosk_tenant_details \
 		--aws-region=us-east-1 \
 		--aws-sso-profile=sugararch \

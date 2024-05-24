@@ -30,6 +30,7 @@ in {
   # not a huge list.
   home.packages = [
     pkgs.asciinema
+    pkgs.awscli2
 	  pkgs.bash
     pkgs.bat
     pkgs.fd
@@ -112,14 +113,8 @@ in {
     shellAliases = {
       ga = "git add";
       gci = "git commit";
-      gco = "git checkout";
       gcp = "git cherry-pick";
-      gdiff = "git diff";
-      gl = "git prettylog";
-      gp = "git push";
-      gs = "git status";
       gt = "git tag";
-      grb = "git rebase";
       tma = "tmux a";
       tmr = "tmuxifier";
     };
@@ -155,6 +150,10 @@ in {
       root = "rev-parse --show-toplevel";
       ci = "commit";
       ch = "checkout";
+      df = "diff";
+      rb = "rebase";
+      st = "status";
+      pl = "prettylog";
     };
     extraConfig = {
       branch.autosetuprebase = "always";
@@ -291,7 +290,7 @@ in {
         bold = { 
           style = "Bold";
         };
-        size = 16;
+        size = 22;
       };
 
       colors = {
