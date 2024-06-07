@@ -38,7 +38,7 @@ in {
     pkgs.gh
     pkgs.htop
     pkgs.jq
-    pkgs.pinentry-gnome
+    pkgs.pinentry-gnome3
     pkgs.ripgrep
     pkgs.tmuxifier
     pkgs.tree
@@ -425,7 +425,7 @@ in {
 
   services.gpg-agent = {
     enable = isLinux;
-    pinentryFlavor = "gnome3";
+    pinentryPackage = pkgs.pinentry-gnome3;
 
     # cache the keys forever so we don't get asked for a password
     defaultCacheTtl = 31536000;
