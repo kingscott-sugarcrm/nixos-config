@@ -169,8 +169,8 @@ in {
   # TODO SETUP
   programs.go = {
     enable = true;
-    goPath = "code/go";
-    goPrivate = [ "github.com/mitchellh" "github.com/hashicorp" "rfc822.mx" ];
+    #goPath = "code/go";
+    #goPrivate = [ "github.com/mitchellh" "github.com/hashicorp" "rfc822.mx" ];
   };
 
   programs.neovim = {
