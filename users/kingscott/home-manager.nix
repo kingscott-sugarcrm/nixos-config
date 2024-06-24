@@ -49,6 +49,9 @@ in {
     # Needed to add to get login working
     pkgs.plymouth
     
+    # Mango requirements
+    pkgs.php83
+
     # Multiverse dependencies
     pkgs.bazelisk
     pkgs.go
@@ -164,7 +167,7 @@ in {
       core.askPass = ""; # needs to be empty to use terminal for ask pass
       credential.helper = "store"; # want to make this more secure
       github.user = "kingscott-sugarcrm";
-      push.default = "tracking";
+      push.default = "current";
       init.defaultBranch = "main";
     };
   };
